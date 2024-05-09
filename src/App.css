@@ -1,24 +1,28 @@
 @font-face {
-  font-family: 'KyivType_Serif-Bold';
-  src: url("./assets/fonts/KyivType_Serif/Dmitry Rastvortsev - KyivType Serif Bold3.otf") format("opentype");
+  font-family: "KyivType_Serif-Bold";
+  src: url("./assets/fonts/KyivType_Serif/Dmitry Rastvortsev - KyivType Serif Bold3.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'KyivType_Serif-Medium';
-  src: url("./assets/fonts/KyivType_Serif/Dmitry Rastvortsev - KyivType Serif Medium.otf") format("opentype");
+  font-family: "KyivType_Serif-Medium";
+  src: url("./assets/fonts/KyivType_Serif/Dmitry Rastvortsev - KyivType Serif Medium.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'KyivType_Titling-Bold';
-  src: url("./assets/fonts/KyivType_Titling/Dmitry Rastvortsev - KyivType Titling Bold.otf") format("opentype");
+  font-family: "KyivType_Titling-Bold";
+  src: url("./assets/fonts/KyivType_Titling/Dmitry Rastvortsev - KyivType Titling Bold.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'KyivType_Titling-Regular';
-  src: url("./assets/fonts/KyivType_Titling/Dmitry Rastvortsev - KyivType Titling Regular2.otf") format("opentype");
+  font-family: "KyivType_Titling-Regular";
+  src: url("./assets/fonts/KyivType_Titling/Dmitry Rastvortsev - KyivType Titling Regular2.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,4 +36,10 @@
   .mainSection {
     background: url("./assets/img/back/BacMainMin.png") center 0 no-repeat;
   }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
