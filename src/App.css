@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'KyivType_Serif-Bold';
+  src: url("./assets/fonts/KyivType_Serif/Dmitry Rastvortsev - KyivType Serif Bold3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KyivType_Serif-Medium';
+  src: url("./assets/fonts/KyivType_Serif/Dmitry Rastvortsev - KyivType Serif Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KyivType_Titling-Bold';
+  src: url("./assets/fonts/KyivType_Titling/Dmitry Rastvortsev - KyivType Titling Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KyivType_Titling-Regular';
+  src: url("./assets/fonts/KyivType_Titling/Dmitry Rastvortsev - KyivType Titling Regular2.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainSection {
+  background: url("./assets/img/back/BacMain.png") center 0 no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 1400px) {
+  .mainSection {
+    background: url("./assets/img/back/BacMainMin.png") center 0 no-repeat;
   }
 }

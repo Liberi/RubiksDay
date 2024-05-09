@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: rgba(36, 47, 49, 80%);
+    padding: 0 30%;
+    font-size: 20px;
+    font-family: 'KyivType_Titling-Regular';
+}
+header > a{
+    /* height: 30px;
+    width: 100px;
+    text-align: center; */
+    text-decoration: none;
+}
+header img{
+    height: 50px;
+}
+.mainLogo{
+    /* flex-grow: 1; */
+    margin-right: 30%;
+}
