@@ -1,53 +1,81 @@
-header{
-    width: 100%;
-    box-sizing: border-box;
-    height: 70px;
-    background-color: rgba(36, 47, 49, 80%);
-    font-size: 20px;
-    font-family: 'KyivType_Titling-Regular';
-    padding: 0 28%;
+header {
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  background-color: rgba(36, 47, 49, 80%);
+  font-size: 20px;
+  font-family: "KyivType_Titling-Regular";
+  padding: 0 28%;
 }
-@media (max-width: 1700px){
-    header{
-        padding: 0 25%;
-    }
+@media (max-width: 1700px) {
+  header {
+    padding: 0 25%;
+  }
 }
-@media (max-width: 1200px){
-    header{
-        padding: 0 20%;
-    }
-    header .blockLink{
-        width: 50%;
-    }
+@media (max-width: 1300px) {
+  header {
+    padding: 0 20%;
+  }
+  header .blockLink {
+    width: 50%;
+  }
 }
-@media (max-width: 900px){
-    header{
-        padding: 0 10%;
-    }
-    header img{
-        height: 40px;
-    }
-    header .menuHeder{
-        display: inline-block;
-    }
-    .blockLink{
-        display: none;
-    }
-}
-header a{
-    text-decoration: none;
-}
-header img{
-    height: 50px;
-}
-.blockLink{
-    width: 45%;
-}
-.menuHeder{
-    display: none;
-    width: 40px;
+@media (max-width: 1000px) {
+  header img {
     height: 40px;
-    background: url('../../assets/img/icon/Menu.svg') center center no-repeat;
-    background-size: contain;
-    border: none;
+  }
+  header .menuHeder {
+    display: inline-block;
+  }
+  .blockLink {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    padding: 0 10%;
+  }
+}
+/* @media (min-width: 900px) {
+  header.hederOpenMenu {
+    min-height: 70px;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+  }
+} */
+header a {
+  text-decoration: none;
+}
+header img {
+  height: 50px;
+}
+.blockLink {
+  width: 45%;
+}
+.menuHeder {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/img/icon/Menu.svg") center center no-repeat;
+  background-size: contain;
+  border: none;
+}
+.hederOpenMenu {
+  min-height: 350px;
+  flex-wrap: wrap;
+  position: absolute;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+.blockLinkOpenMenu {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  display: flex;
+  font-family: "KyivType_Titling-Bold";
 }
