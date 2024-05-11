@@ -1,0 +1,20 @@
+.sectionSlider > button{
+    width: 45px;
+    height: 45px;
+    background: url(../../assets/img/icon/CubeMap.svg) center center no-repeat;
+    background-size: cover;
+    border: none;
+    transform: rotate(90deg);
+    margin-top: 40%;
+}
+.sectionSlider > button:first-of-type{
+    transform: rotate(270deg);
+}
+.sectionSlider{
+    min-height: 800px;
+    justify-content: center;
+    padding: 0 20%;
+}
+.comtainerSlider{
+    width: 40%;
+}

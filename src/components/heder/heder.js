@@ -1,11 +1,11 @@
 import { observer } from "mobx-react-lite";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 import "./heder.styles.css";
-import DataHeder from "../../data/heder.data.js";
 import MenuController from "../../store/hederMenuController.js";
 
 import MainLogo from "../../assets/img/back/MainLogo.png";
+import BlockLink from "./blockLink/block.link.js";
 
 export default observer(function PageNotFound() {
   function getWindowSize() {
@@ -30,7 +30,6 @@ export default observer(function PageNotFound() {
   return (
     <header
       className={`flex ${MenuController.isOpenMenu ? "hederOpenMenu" : ""}`}
-      // style={ }
     >
       <a href="/" className="mainLogo">
         <img src={MainLogo} alt="NotFound" />
@@ -41,17 +40,7 @@ export default observer(function PageNotFound() {
           MenuController.updateStatusOpenedMenu(!MenuController.isOpenMenu);
         }}
       />
-      <div
-        className={`flex ${
-          MenuController.isOpenMenu ? "blockLinkOpenMenu" : "blockLink"
-        }`}
-      >
-        {DataHeder.map((item) => (
-          <a href={item.link} style={item.style} key={item.id}>
-            {item.linkText}
-          </a>
-        ))}
-      </div>
+      <BlockLink />
     </header>
   );
 });

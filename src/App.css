@@ -39,7 +39,21 @@
 }
 
 .flex {
+  /* Класс который облегчает написание display: flex */
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+a:hover {
+  /*ссылка при наведении прозрачнее и подчеркнутая*/
+  text-decoration: underline;
+  filter: brightness(85%);
+}
+button:hover {
+  /*делает кнопку прозрачнее при наведении*/
+  filter: brightness(85%);
+}
+ul {
+  /* Удаляем точки у всех списков */
+  list-style: none;
 }
