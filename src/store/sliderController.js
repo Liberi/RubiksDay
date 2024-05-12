@@ -3,7 +3,7 @@ import { makeAutoObservable } from "mobx";
 import DataSlider from "../data/sliders.data";
 
 class SliderController {
-  currentSlider = 0;
+  currentSliderIndex = 0;
 
   constructor() {
     makeAutoObservable(this);
@@ -12,15 +12,19 @@ class SliderController {
   updateIndexSlider(sliderIndex) {
     // console.log(`ms ${DataSlider.length}`);
     // console.log(`Тек слайдер ${this.currentSlider}`);
-    if (this.currentSlider + sliderIndex > DataSlider.length - 1) {
-      this.currentSlider = 0;
+    if (this.currentSliderIndex + sliderIndex > DataSlider.length - 1) {
+      this.currentSliderIndex = 0;
       return;
     }
-    if (this.currentSlider + sliderIndex < 0) {
-      this.currentSlider = DataSlider.length - 1;
+    if (this.currentSliderIndex + sliderIndex < 0) {
+      this.currentSliderIndex = DataSlider.length - 1;
       return;
     }
-    this.currentSlider += sliderIndex;
+    this.currentSliderIndex += sliderIndex;
+  }
+
+  get getCurrentElement(){
+    return DataSlider[this.currentSliderIndex]
   }
 }
 

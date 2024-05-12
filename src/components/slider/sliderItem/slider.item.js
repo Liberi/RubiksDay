@@ -1,8 +1,9 @@
 import "./styles.slider.item.css";
-import DataSlider from "../../../data/sliders.data";
+import SliderController from "../../../store/sliderController";
+import { observer } from "mobx-react-lite";
 
-export default function SliderItem({ sliderIndex = 0 }) {
-  let sliderData = DataSlider[sliderIndex];
+export default observer( function SliderItem() {
+  let sliderData = SliderController.getCurrentElement;
 
   return (
     <div key={sliderData.id} className="flex sliderItemComtainer">
@@ -13,4 +14,4 @@ export default function SliderItem({ sliderIndex = 0 }) {
       <a href={sliderData.link}></a>
     </div>
   );
-}
+});
