@@ -1,19 +1,26 @@
 // import logo from './logo.svg';
-import "./App.css";
-// import PageNotFound from "./components/PageNotFound/pageNotFound";
-import Heder from "./components/heder/heder";
-import Slider from "./components/slider/slider";
+import { observer } from "mobx-react-lite";
+import { useEffect } from "react";
 
-function App() {
+import "./App.css";
+
+import Heder from "./components/heder/heder";
+import PageRouterController from "./store/pagesRouterController";
+import WindowSizeController from "./store/windowSizeController.js";
+
+export default observer(function App() {
+  useEffect(() => {
+    WindowSizeController.startListening();
+
+    return () => {
+      WindowSizeController.stopListening();
+    };
+  }, []);
+
   return (
     <section className="mainSection">
       <Heder />
-      <main>
-        <Slider />
-        {/* <PageNotFound /> */}
-      </main>
+      <main>{PageRouterController.getPage}</main>
     </section>
   );
-}
-
-export default App;
+});

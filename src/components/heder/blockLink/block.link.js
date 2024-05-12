@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 
 import MenuController from "../../../store/hederMenuController.js";
+import PageController from "../../../store/pagesRouterController.js";
 import DataHeder from "../../../data/heder.data.js";
 import "../heder.styles.css";
 
@@ -12,9 +13,16 @@ export default observer(function BlockLink() {
       }`}
     >
       {DataHeder.map((item) => (
-        <a href={item.link} style={item.style} key={item.id}>
+        <button 
+          style={item.style} 
+          key={item.id}
+          onClick={()=>{
+            // console.log(`На старницу ${item.openPageName}`);
+            PageController.toPage(item.openPageName);
+          }}
+        >
           {item.linkText}
-        </a>
+        </button>
       ))}
     </div>
   );

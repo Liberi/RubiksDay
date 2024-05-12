@@ -4,6 +4,7 @@ import DataSlider from "../data/sliders.data";
 
 class SliderController {
   currentSliderIndex = 0;
+  currentSliderAnim = 'slide-appearance';
 
   constructor() {
     makeAutoObservable(this);
@@ -21,6 +22,10 @@ class SliderController {
       return;
     }
     this.currentSliderIndex += sliderIndex;
+  }
+
+  updateAnimSlider(isAppearanse){
+    this.currentSliderAnim = isAppearanse ? 'slide-appearance' : 'slide-disappearance';
   }
 
   get getCurrentElement(){

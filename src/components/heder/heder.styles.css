@@ -3,8 +3,6 @@ header {
   box-sizing: border-box;
   height: 70px;
   background-color: rgba(36, 47, 49, 80%);
-  font-size: 20px;
-  font-family: "KyivType_Titling-Regular";
   padding: 0 28%;
 }
 @media (max-width: 1700px) {
@@ -36,23 +34,18 @@ header {
     padding: 0 10%;
   }
 }
-/* @media (min-width: 900px) {
-  header.hederOpenMenu {
-    min-height: 70px;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-top: 0;
-    position: relative;
-  }
-} */
-header a {
-  text-decoration: none;
-}
 header img {
   height: 50px;
 }
 .blockLink {
   width: 45%;
+}
+.mainLogo,
+header button{
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-family: "KyivType_Titling-Regular";
 }
 .menuHeder {
   display: none;
@@ -77,5 +70,7 @@ header img {
   align-items: flex-end;
   flex-direction: column;
   display: flex;
+}
+.blockLinkOpenMenu button{
   font-family: "KyivType_Titling-Bold";
 }

@@ -4,6 +4,7 @@ import SliderController from "../../store/sliderController";
 import HederMenuController from "../../store/hederMenuController.js";
 import SliderItem from "./sliderItem/slider.item";
 import "./stiles.slyder.css";
+import "./slider.anim.css";
 
 export default observer(function Slider() {
   return (
@@ -14,22 +15,31 @@ export default observer(function Slider() {
         <button
           className=""
           onClick={() => {
+            SliderController.updateAnimSlider(true);
             SliderController.updateIndexSlider(-1);
+            /* setTimeout(() =>{
+              // SliderController.updateAnimSlider(false);
+              SliderController.updateIndexSlider(-1);
+            }, 500); */
           }}
         />
       </div>
       <div className="comtainerSlider">
-        <SliderItem /* sliderIndex={SliderController.currentSlider} */ />
+        <SliderItem />
       </div>
       <div className="buttonContainer">
         <button
           className=""
           onClick={() => {
+            SliderController.updateAnimSlider(true);
             SliderController.updateIndexSlider(1);
+            /* setTimeout(() =>{
+              // SliderController.updateAnimSlider(true);
+              SliderController.updateIndexSlider(1);
+            }, 500); */
           }}
         />
       </div>
     </section>
   );
 });
-/*className="" sliderIndex={SliderController.currentSlider} */
