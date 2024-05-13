@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c9ef433.css",
-    "main.js": "/static/js/main.1fa1f1a9.js",
-    "static/js/453.035e1d0e.chunk.js": "/static/js/453.035e1d0e.chunk.js",
-    "static/media/BacMain.png": "/static/media/BacMain.1c5614742fc2d8769168.png",
-    "static/media/BacMainMin.png": "/static/media/BacMainMin.1d4dd37f4f53e61ccd2b.png",
-    "static/media/MainLogo.png": "/static/media/MainLogo.5c8162d6a25bfa7f4834.png",
-    "static/media/Dmitry Rastvortsev - KyivType Titling Bold.otf": "/static/media/Dmitry Rastvortsev - KyivType Titling Bold.f3846821cd997abff6e5.otf",
-    "static/media/Dmitry Rastvortsev - KyivType Titling Regular2.otf": "/static/media/Dmitry Rastvortsev - KyivType Titling Regular2.1d6ba1ff2da4ccf0099d.otf",
-    "static/media/Dmitry Rastvortsev - KyivType Serif Medium.otf": "/static/media/Dmitry Rastvortsev - KyivType Serif Medium.1e4bc5cf6592dd5d6636.otf",
-    "static/media/Dmitry Rastvortsev - KyivType Serif Bold3.otf": "/static/media/Dmitry Rastvortsev - KyivType Serif Bold3.61b33c38f14414b57e09.otf",
-    "static/media/KubMain.png": "/static/media/KubMain.31d1c73539c19f7d3ccd.png",
-    "static/media/ImgSlider3.png": "/static/media/ImgSlider3.0120f73115389691753e.png",
-    "static/media/ImgSlider2.png": "/static/media/ImgSlider2.296fc35a6e26f68d92fa.png",
-    "static/media/PatternFoot.svg": "/static/media/PatternFoot.2795404f3c98f08657b9.svg",
-    "static/media/CubeMap.svg": "/static/media/CubeMap.cce76d7fbfd32319b51f.svg",
-    "static/media/Menu.svg": "/static/media/Menu.c939c9a5c16d04c49af5.svg",
-    "index.html": "/index.html",
-    "main.7c9ef433.css.map": "/static/css/main.7c9ef433.css.map",
-    "main.1fa1f1a9.js.map": "/static/js/main.1fa1f1a9.js.map",
-    "453.035e1d0e.chunk.js.map": "/static/js/453.035e1d0e.chunk.js.map"
+    "main.css": "/rubiksDay/static/css/main.6bb73650.css",
+    "main.js": "/rubiksDay/static/js/main.fb644372.js",
+    "static/js/453.035e1d0e.chunk.js": "/rubiksDay/static/js/453.035e1d0e.chunk.js",
+    "static/media/BacMain.png": "/rubiksDay/static/media/BacMain.1c5614742fc2d8769168.png",
+    "static/media/BacMainMin.png": "/rubiksDay/static/media/BacMainMin.1d4dd37f4f53e61ccd2b.png",
+    "static/media/MainLogo.png": "/rubiksDay/static/media/MainLogo.5c8162d6a25bfa7f4834.png",
+    "static/media/Dmitry Rastvortsev - KyivType Titling Bold.otf": "/rubiksDay/static/media/Dmitry Rastvortsev - KyivType Titling Bold.f3846821cd997abff6e5.otf",
+    "static/media/Dmitry Rastvortsev - KyivType Titling Regular2.otf": "/rubiksDay/static/media/Dmitry Rastvortsev - KyivType Titling Regular2.1d6ba1ff2da4ccf0099d.otf",
+    "static/media/Dmitry Rastvortsev - KyivType Serif Medium.otf": "/rubiksDay/static/media/Dmitry Rastvortsev - KyivType Serif Medium.1e4bc5cf6592dd5d6636.otf",
+    "static/media/Dmitry Rastvortsev - KyivType Serif Bold3.otf": "/rubiksDay/static/media/Dmitry Rastvortsev - KyivType Serif Bold3.61b33c38f14414b57e09.otf",
+    "static/media/KubMain.png": "/rubiksDay/static/media/KubMain.31d1c73539c19f7d3ccd.png",
+    "static/media/ImgSlider3.png": "/rubiksDay/static/media/ImgSlider3.0120f73115389691753e.png",
+    "static/media/ImgSlider2.png": "/rubiksDay/static/media/ImgSlider2.296fc35a6e26f68d92fa.png",
+    "static/media/PatternFoot.svg": "/rubiksDay/static/media/PatternFoot.2795404f3c98f08657b9.svg",
+    "static/media/CubeMap.svg": "/rubiksDay/static/media/CubeMap.cce76d7fbfd32319b51f.svg",
+    "static/media/Menu.svg": "/rubiksDay/static/media/Menu.c939c9a5c16d04c49af5.svg",
+    "index.html": "/rubiksDay/index.html",
+    "main.6bb73650.css.map": "/rubiksDay/static/css/main.6bb73650.css.map",
+    "main.fb644372.js.map": "/rubiksDay/static/js/main.fb644372.js.map",
+    "453.035e1d0e.chunk.js.map": "/rubiksDay/static/js/453.035e1d0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c9ef433.css",
-    "static/js/main.1fa1f1a9.js"
+    "static/css/main.6bb73650.css",
+    "static/js/main.fb644372.js"
   ]
 }
