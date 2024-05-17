@@ -1,30 +1,50 @@
 .App {
+}
+.App-header {
   text-align: center;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
-
+.App-header > p,
+.App-header > h2 {
+  color: #242f31;
+  width: 50%;
+}
 .App-logo {
-  /* border: 1px solid black; */
-  margin-top: 50px;
-  /* height: 40vmin; */
-  width: 25%;
-  pointer-events: none;
+  max-height: 450px;
+  width: 20%;
 }
 
-@media (max-height: 800px) {
+.App-link {
+  color: #61dafb;
+}
+
+@media (max-width: 1100px) {
   .App-logo {
-    margin-top: 5%;
+    width: 35%;
   }
 }
-
-@media (max-width: 900px) {
+@media (max-width: 650px) {
   .App-logo {
     width: 40%;
   }
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
 }
-
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .App-logo {
     width: 60%;
+  }
+  .App-header > p,
+  .App-header > h2 {
+    color: #242f31;
+    width: 70%;
   }
 }
 
@@ -34,40 +54,11 @@
   }
 }
 
-.App-header {
-  /* background: url('../../assets/img/back/BacMain.png') center 0 no-repeat;
-    background-size: cover; */
-  min-height: 100vh;
-  display: flex;  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-/* @media (max-width: 1400px) { 
-    .App-header{
-        background: url('../../assets/img/back/BacMainMin.png') center 0 no-repeat;
-    }
-} */
-
-.App-header > p,
-.App-header > h2 {
-  color: #242f31;
-  width: 50%;
-  margin: 5px; 
-}
-
-.App-link {
-  color: #61dafb;
-  /* margin-bottom: 10%; */
-}
-
-/* @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  } */

@@ -5,6 +5,7 @@ import DataSlider from "../data/sliders.data";
 class SliderController {
   currentSliderIndex = 0;
   currentSliderAnim = 'slide-appearance';
+  isFirstClick = true;
 
   constructor() {
     makeAutoObservable(this);
@@ -30,6 +31,10 @@ class SliderController {
 
   get getCurrentElement(){
     return DataSlider[this.currentSliderIndex]
+  }
+
+  firstClick(){
+    this.isFirstClick = false;
   }
 }
 
