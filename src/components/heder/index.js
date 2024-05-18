@@ -4,10 +4,10 @@ import MenuController from "../../store/hederMenuController.js";
 import PageController from "../../store/pagesRouterController.js";
 
 import MainLogo from "../../assets/img/back/MainLogo.png";
-import BlockLink from "./blockLink/block.link.js";
+import BlockLink from "./blockLink";
 import "./heder.styles.css";
 
-export default observer(function PageNotFound() {
+export default observer(function Heder() {
   return (
     <header
       className={`flex ${MenuController.isOpenMenu ? "hederOpenMenu" : ""}`}

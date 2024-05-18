@@ -1,8 +1,8 @@
 import { observer } from "mobx-react-lite";
 
-import SliderController from "../../store/sliderController";
+import SliderController from "../../store/sliderController.js";
 import HederMenuController from "../../store/hederMenuController.js";
-import SliderItem from "./sliderItem/slider.item";
+import SliderItem from "./sliderItem";
 import "./stiles.slyder.css";
 import "./slider.anim.css";
 

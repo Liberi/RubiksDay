@@ -1,12 +1,12 @@
 import { makeAutoObservable } from "mobx";
 
-import PageNotFound from "../components/PageNotFound/pageNotFound";
-import Slider from "../components/slider/slider";
+import NotFoundScreen from "../screens/NotFoundScreen";
+import MainScreen from "../screens/MainScreen";
 
 class PageRouter {
   pages = new Map([
-    ["PageNotFound", <PageNotFound />],
-    ["MainPage", <Slider />],
+    ["PageNotFound", <NotFoundScreen />],
+    ["MainPage", <MainScreen />],
   ]);
   currentPages = "MainPage";
 

@@ -2,7 +2,7 @@ import HederMenuController from "../../store/hederMenuController";
 
 import logo from "../../assets/img/back/KubMain.png";
 import ImageNotFoung from "../../assets/img/back/ImageNotFound.png"
-import "./pageNotFound.css";
+import "./NotFound.css";
 import { observer } from "mobx-react-lite";
 
 export default observer( function PageNotFound() {

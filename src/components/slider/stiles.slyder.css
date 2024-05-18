@@ -1,8 +1,9 @@
 .buttonContainer {
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 27%;
   width: 45px;
   height: 45px;
+  align-self: center;
 }
 .buttonContainer button {
   width: 100%;
@@ -16,11 +17,13 @@
   transform: rotate(270deg);
 }
 .sectionSlider {
-  min-height: 850px;
+  min-height: 830px;
   justify-content: center;
-  /* padding: 0 38%; */
+  align-items: flex-end;
+  /* margin-bottom: 50px; */
 }
 .comtainerSlider {
+  position: relative;
   width: 20%;
 }
 @media (min-width: 2000px) {
@@ -42,7 +45,11 @@
     width: 17%;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
+  .sectionSlider {
+    align-items: center;
+    min-height: 850px;
+  }
   .comtainerSlider {
     width: 30%;
   }
@@ -82,5 +89,8 @@
   }
   .buttonContainer {
     margin-top: 70%;
+  }
+  .sectionSlider {
+    margin-bottom: 0;
   }
 }

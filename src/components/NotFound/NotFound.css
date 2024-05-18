@@ -1,4 +1,9 @@
+:root {
+  --MyBlue-color: #4B9BBC;
+}
+
 .App {
+  /* margin-bottom: 50px; */
 }
 .App-header {
   text-align: center;
@@ -21,7 +26,28 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--MyBlue-color);
+}
+
+@media (min-width: 2000px) {
+  .App-logo { 
+    padding-top: 80px;
+    width: 17%;
+  }
+  .App-header > p,
+  .App-header > h2 {
+    width: 20%;
+  }
+}
+@media (min-width: 2500px) {
+  .App-logo {
+    padding-top: 200px;
+    width: 13%;
+  }
+  .App-header > p,
+  .App-header > h2 {
+    width: 15%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -43,7 +69,6 @@
   }
   .App-header > p,
   .App-header > h2 {
-    color: #242f31;
     width: 70%;
   }
 }
@@ -51,6 +76,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    transform-origin: center;
   }
 }
 

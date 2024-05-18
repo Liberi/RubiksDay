@@ -1,0 +1,157 @@
+:root {
+  --MyRed-color: #ff4145;
+  --MyYellow-color: #ffa306;
+  --MyBlue-color: #4b9bbc;
+  --Red-Border: 5px solid var(--MyRed-color);
+}
+
+footer.flex {
+  font-family: "KyivType_Serif-Medium";
+  background: url("../../assets/img/back/FooterBack.svg") no-repeat;
+  background-position: 68% 70px;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
+  height: 250px;
+}
+.contactContainer {
+  width: 43%;
+  height: 120px;
+}
+.containerInfo {
+  padding: 2% 5%;
+  background-color: rgba(36, 47, 49, 80%);
+  border: var(--Red-Border);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.contactContainer div a {
+  color: var(--MyBlue-color);
+  text-decoration: underline;
+}
+.contactContainer img {
+  border: var(--Red-Border);
+  border-radius: 45px;
+}
+.autorInfo {
+  width: 330px;
+  height: 80px;
+}
+.autorInfo img {
+  width: 70px;
+  height: 70px;
+}
+.autorInfo .containerInfo {
+  width: 70%;
+  height: 100%;
+}
+.autorInfo p {
+  color: var(--MyYellow-color);
+  font-size: 24px;
+}
+.autorInfo div a {
+  font-size: 20px;
+}
+.gitHubInfo {
+  height: 60px;
+  width: 270px;
+}
+.gitHubInfo .containerInfo {
+  width: 70%;
+  height: 100%;
+}
+.gitHubInfo div a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+.gitHubInfo img {
+  background-color: var(--MyBlue-color);
+  width: 55px;
+  height: 55px;
+}
+
+@media (min-width: 1900px) {
+  footer.flex {
+    background-position: 68% 60px;
+    background-size: 120%;
+  }
+}
+@media (min-width: 2000px) {
+  .contactContainer {
+    width: 36%;
+  }
+  footer.flex {
+    background-position: 68% 50px;
+  }
+}
+@media (min-width: 2500px) {
+  .contactContainer {
+    width: 30%;
+  }
+  footer.flex {
+    background-position: 68% 40px;
+  }
+}
+@media (max-width: 1300px) {
+  .containerInfo {
+    padding-top: 4%;
+  }
+  .gitHubInfo {
+    width: 40%;
+  }
+  .gitHubInfo div a {
+    font-size: 20px;
+  }
+  .autorInfo {
+    width: 50%;
+  }
+  .autorInfo p {
+    font-size: 20px;
+  }
+  .autorInfo div a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1700px) {
+  .contactContainer {
+    width: 48%;
+  }
+}
+@media (max-width: 1120px) {
+  .contactContainer {
+    width: 55%;
+  }
+}
+@media (max-width: 980px) {
+  .contactContainer {
+    width: 65%;
+  }
+}
+@media (max-width: 850px) {
+  .containerInfo {
+    display: none;
+  }
+  .gitHubInfo {
+    justify-content: flex-end;
+  }
+  .gitHubInfo img {
+    width: 70px;
+    height: 70px;
+  }
+  .autorInfo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .contactContainer {
+    width: 75%;
+  }
+}
+@media (max-width: 550px) {
+  .contactContainer {
+    width: 85%;
+  }
+}

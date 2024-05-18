@@ -59,7 +59,7 @@ header button{
   min-height: 350px;
   flex-wrap: wrap;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   align-items: flex-start;
   padding-top: 15px;
 }

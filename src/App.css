@@ -29,12 +29,17 @@
 
 .mainSection {
   background: url("./assets/img/back/BacMain.png") center 0 no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 @media (max-width: 1400px) {
   .mainSection {
     background: url("./assets/img/back/BacMainMin.png") center 0 no-repeat;
+  }
+}
+@media (min-width: 1900px) {
+  .mainSection {
+    background-size: contain;
   }
 }
 
