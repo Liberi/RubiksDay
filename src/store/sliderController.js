@@ -32,6 +32,7 @@ class SliderController {
   }
 
   updateDataSlider(newData) {
+    this.currentSliderIndex = 0;
     this.DataSlider = newData;
   }
 

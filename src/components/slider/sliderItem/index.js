@@ -15,12 +15,11 @@ export default observer(function SliderItem() {
       key={sliderData.id}
       className={`flex sliderItemComtainer ${SliderController.currentSliderAnim}`}
     >
-      
       <img
         src={require(`../../../assets/img/back/${sliderData.fileNameLogo}`)}
         alt={ImageNotFound}
       />
-      <div className="loadAnim blockLoad"/>
+      <div className="loadAnim blockLoad" />
       <h1>{sliderData.hedText}</h1>
       <p>«{sliderData.mainText}»</p>
       <h3>{sliderData.botText}</h3>
@@ -30,6 +29,10 @@ export default observer(function SliderItem() {
           const link = sliderData.link;
           if (link[0] === "#") {
             window.location = link;
+          } else if (link[0] === "/") {
+            alert(
+              `Подробрее о "${sliderData.mainText}" можно будет узнать позже!`
+            );
           } else {
             window.open(link);
           }

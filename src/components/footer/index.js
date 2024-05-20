@@ -5,6 +5,8 @@ import AutorLogo from "../../assets/img/icon/autorLogo.jpg";
 import GitHubLogo from "../../assets/img/icon/github-mark.png";
 import ImageNotFound from "../../assets/img/back/ImageNotFound.png";
 
+import PageController from "../../store/pagesRouterController";
+
 export default function Footer() {
   return (
     <footer className="flex">
@@ -14,7 +16,13 @@ export default function Footer() {
             <img src={AutorLogo} alt={ImageNotFound} />
           </a>
           <div className="containerInfo">
-            <p>Made by Liberi</p>
+            <p
+              onClick={() => {
+                PageController.toPage("PageNotFound");
+              }}
+            >
+              Made by Liberi
+            </p>
             <a href="https://t.me/Lib_int" target="_blank" rel="noreferrer">
               my telegram
             </a>

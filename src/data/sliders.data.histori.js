@@ -1,34 +1,43 @@
-const DataSlider = [
+const DataSliderHistori = [
     {
       id: "0",
-      fileNameLogo: "KubMain.png",
-      hedText: `День\nКубика-Рубика`,
-      mainText: "Волшебный (магический) Куб",
+      fileNameLogo: "HistoriSliderImg1.png",
+      hedText: `Рождение\nКубика`,
+      mainText: "Головоломка, изменившая мир",
       botText:
-        "Идея создания кубика возникла у венгерского архитектора Эрно Рубика в 1974 году",
+        "В 1974 году Эрнё Рубик, венгерский архитектор, создал свое изобретение - трехмерный поворотный кубик. Ставший культовой головоломкой.",
       link: "https://ru.wikipedia.org/wiki/Кубик_Рубика#История",
     },
     {
       id: "1",
-      fileNameLogo: "ImgSlider2.png",
-      hedText: `19 мая\nВсемирный день`,
-      mainText: "В 2024 году: 19 мая, Воскресенье",
+      fileNameLogo: "HistoriSliderImg2.png",
+      hedText: `Увлечение\nмиллионов`,
+      mainText: "Головоломка для всех поколений",
       botText:
-        "День рождения кубика Рубика отмечается 19 мая. В 2024 году это изобретение празднует 50 годовщину!",
-      link: "https://habr.com/ru/companies/first/articles/815147/",
+        "Кубик быстро завоевал популярность во всем мире, став одной из самых известных головоломок. Его решение требует терпения, логического мышления и ловкости рук.",
+      link: "https://speedcubing.ru",
     },
     {
       id: "2",
-      fileNameLogo: "ImgSlider3.png",
-      hedText: "Всемирное\nраспространение",
-      mainText: "Сотни похожих головоломок!",
+      fileNameLogo: "HistoriSliderImg3.png",
+      hedText: "Рекорды\nи турниры",
+      mainText: "Головоломка для профессионалов",
       botText:
-        "За время продаж продано так много кубиков, что ими можно как минимум трижды обернуть планету. Среднестатистическое количество продаж – 350 миллионов.",
-      link: "https://rb.ru/story/rubiks-cube/",
+        "В 1982 году в Будапеште был проведен первый Чемпионат мира по сборке кубика. С тех пор ежегодно проводятся спидкуберские соревнования.",
+      link: "https://cubingrf.org",
     },
     {
       id: "3",
-      fileNameLogo: "ImgSlider4.png",
+      fileNameLogo: "HistoriSliderImg4.png",
+      hedText: "Кубик Рубика\nсегодня",
+      mainText: "Классика в новом облике",
+      botText:
+        "Спустя более 40 лет после своего изобретения, кубик Рубика по-прежнему остается любимой головоломкой миллионов людей по всему миру.",
+      link: "https://www.rubiks.com",
+    },
+    {
+      id: "4",
+      fileNameLogo: "applicationImg.png",
       hedText: "Хотите принять\nучастие?",
       mainText: "Начался прием заявок!",
       botText:
@@ -36,5 +45,5 @@ const DataSlider = [
       link: "#applicationForm",
     },
   ];
-  export default DataSlider;
+  export default DataSliderHistori;
   

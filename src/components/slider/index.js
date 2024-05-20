@@ -7,7 +7,6 @@ import "./stiles.slyder.css";
 import "./slider.anim.css";
 
 export default observer(function Slider(props) {
-  console.log(`Массив для конр`);
   SliderController.updateDataSlider(props.dataSlider);
 
   return (

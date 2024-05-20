@@ -3,7 +3,7 @@ const DataHeder = [
         id: '0',
         linkText: 'ИСТОРИЯ',
         link: '',
-        openPageName: 'PageNotFound',
+        openPageName: 'HistoriPage',
         style: {
             color: '#FF4145',
         },
@@ -12,7 +12,7 @@ const DataHeder = [
         id: '1',
         linkText: 'ФАКТЫ',
         link: '',
-        openPageName: 'PageNotFound',
+        openPageName: 'FactsPage',
         style: {
             color: '#4B9BBC',
         },
@@ -21,7 +21,7 @@ const DataHeder = [
         id: '2',
         linkText: '50 ЛЕТ!',
         link: '',
-        openPageName: 'PageFiftyYears',
+        openPageName: 'FiftyYearsPage',
         style: {
             color: '#FFA306',
         },

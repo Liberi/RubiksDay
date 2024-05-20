@@ -2,11 +2,17 @@ import { makeAutoObservable } from "mobx";
 
 import NotFoundScreen from "../screens/NotFoundScreen";
 import MainScreen from "../screens/MainScreen";
+import HistoriPage from "../screens/HistoriScreen";
+import FiftyYearsScreen from "../screens/FiftyYearsSceen";
+import FactsScreen from "../screens/FactsScreen";
 
 class PageRouter {
   pages = new Map([
     ["PageNotFound", <NotFoundScreen />],
     ["MainPage", <MainScreen />],
+    ["HistoriPage", <HistoriPage />],
+    ["FiftyYearsPage", <FiftyYearsScreen />],
+    ["FactsPage", <FactsScreen />],
   ]);
   currentPages = "MainPage";
 

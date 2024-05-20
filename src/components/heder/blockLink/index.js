@@ -17,7 +17,6 @@ export default observer(function BlockLink() {
           style={item.style} 
           key={item.id}
           onClick={()=>{
-            // console.log(`На старницу ${item.openPageName}`);
             PageController.toPage(item.openPageName);
           }}
         >

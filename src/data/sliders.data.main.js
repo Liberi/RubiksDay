@@ -28,7 +28,7 @@ const DataSlider = [
   },
   {
     id: "3",
-    fileNameLogo: "ImgSlider4.png",
+    fileNameLogo: "applicationImg.png",
     hedText: "Хотите принять\nучастие?",
     mainText: "Начался прием заявок!",
     botText:
