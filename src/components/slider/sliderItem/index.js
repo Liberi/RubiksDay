@@ -8,6 +8,7 @@ import "../slider.anim.css";
 
 export default observer(function SliderItem() {
   let sliderData = SliderController.getCurrentElement;
+  // console.log(`Тек эл сл ${sliderData}`);
 
   return (
     <div

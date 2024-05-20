@@ -8,6 +8,7 @@
   width: 100%;
   margin-top: 50px;
   justify-content: center;
+  position: relative;
 }
 #applicationForm {
   width: 43%;
@@ -76,9 +77,24 @@
     width: 30%;
   }
 }
+@media (max-width: 1450px) {
+  .formSection::before {
+    content: '';
+    background: url('../../assets/img/back/DelimiterImage.png') center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -80px;
+    width: 30%;
+    height: 30px;
+  }
+}
 @media (max-width: 1120px) {
   #applicationForm {
     width: 55%;
+  }
+  .formSection::before {
+    top: -90px;
+    width: 35%;
   }
 }
 @media (max-width: 980px) {
@@ -95,10 +111,18 @@
   #applicationForm input[type="submit"] {
     width: 40%;
   }
+  .formSection::before {
+    top: -95px;
+    width: 40%;
+  }
 }
 @media (max-width: 600px) {
   #applicationForm {
     width: 75%;
+  }
+  .formSection::before {
+    top: -105px;
+    width: 45%;
   }
 }
 @media (max-width: 550px) {
@@ -116,5 +140,8 @@
   }
   #applicationForm input[type="submit"] {
     width: 50%;
+  }
+  .formSection::before {
+    width: 55%;
   }
 }

@@ -1,39 +1,45 @@
-import { makeAutoObservable } from "mobx";
-
-import DataSlider from "../data/sliders.data";
+import { action, makeAutoObservable, observable } from "mobx";
 
 class SliderController {
+  DataSlider = null;
   currentSliderIndex = 0;
-  currentSliderAnim = 'slide-appearance';
+  currentSliderAnim = "slide-appearance";
   isFirstClick = true;
 
   constructor() {
-    makeAutoObservable(this);
+    makeAutoObservable(this, {
+      DataSlider: observable,
+      updateDataSlider: action,
+    });
   }
 
   updateIndexSlider(sliderIndex) {
-    // console.log(`ms ${DataSlider.length}`);
-    // console.log(`Тек слайдер ${this.currentSlider}`);
-    if (this.currentSliderIndex + sliderIndex > DataSlider.length - 1) {
+    if (this.currentSliderIndex + sliderIndex > this.DataSlider.length - 1) {
       this.currentSliderIndex = 0;
       return;
     }
     if (this.currentSliderIndex + sliderIndex < 0) {
-      this.currentSliderIndex = DataSlider.length - 1;
+      this.currentSliderIndex = this.DataSlider.length - 1;
       return;
     }
     this.currentSliderIndex += sliderIndex;
   }
 
-  updateAnimSlider(isAppearanse){
-    this.currentSliderAnim = isAppearanse ? 'slide-appearance' : 'slide-disappearance';
+  updateAnimSlider(isAppearanse) {
+    this.currentSliderAnim = isAppearanse
+      ? "slide-appearance"
+      : "slide-disappearance";
   }
 
-  get getCurrentElement(){
-    return DataSlider[this.currentSliderIndex]
+  updateDataSlider(newData) {
+    this.DataSlider = newData;
   }
 
-  firstClick(){
+  get getCurrentElement() {
+    return this.DataSlider[this.currentSliderIndex];
+  }
+
+  firstClick() {
     this.isFirstClick = false;
   }
 }
